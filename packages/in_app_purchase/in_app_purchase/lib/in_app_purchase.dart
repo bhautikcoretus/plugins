@@ -113,10 +113,12 @@ class InAppPurchase implements InAppPurchasePlatformAdditionProvider {
   ///  * [restorePurchases], for restoring non consumable products.
   ///
   /// Calling this method for consumable items will cause unwanted behaviors!
-  Future<bool> buyNonConsumable({required PurchaseParam purchaseParam}) =>
+  Future<bool> buyNonConsumable({required PurchaseParam purchaseParam}) {
+      print('Bhautik: step 1');
       InAppPurchasePlatform.instance.buyNonConsumable(
         purchaseParam: purchaseParam,
       );
+  }
 
   /// Buy a consumable product.
   ///
