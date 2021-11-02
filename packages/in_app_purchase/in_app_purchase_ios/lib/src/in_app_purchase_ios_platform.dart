@@ -71,7 +71,7 @@ class InAppPurchaseIosPlatform extends InAppPurchasePlatform {
     print('Bhautik : buyNonConsumable');
     await _skPaymentQueueWrapper.addPayment(SKPaymentWrapper(
         productIdentifier: purchaseParam.productDetails.id,
-        quantity: (purchaseParam.quantity == null) ? 1 : purchaseParam.quantity,
+        quantity: purchaseParam.quantity,
         applicationUsername: purchaseParam.applicationUserName,
         simulatesAskToBuyInSandbox: (purchaseParam is AppStorePurchaseParam)
             ? purchaseParam.simulatesAskToBuyInSandbox
