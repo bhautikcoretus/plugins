@@ -68,6 +68,7 @@ class InAppPurchaseIosPlatform extends InAppPurchasePlatform {
 
   @override
   Future<bool> buyNonConsumable({required PurchaseParam purchaseParam}) async {
+    print('Bhautik : buyNonConsumable');
     await _skPaymentQueueWrapper.addPayment(SKPaymentWrapper(
         productIdentifier: purchaseParam.productDetails.id,
         quantity: 1,
