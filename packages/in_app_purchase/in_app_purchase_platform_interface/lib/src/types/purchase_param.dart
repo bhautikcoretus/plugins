@@ -7,10 +7,8 @@ import 'product_details.dart';
 /// The parameter object for generating a purchase.
 class PurchaseParam {
   /// Creates a new purchase parameter object with the given data.
-  PurchaseParam({
-    required this.productDetails,
-    this.applicationUserName,
-  });
+  PurchaseParam(
+      {required this.productDetails, this.applicationUserName, this.quantity});
 
   /// The product to create payment for.
   ///
@@ -24,4 +22,5 @@ class PurchaseParam {
   /// user's Google ID for this field.
   /// For example, you can use a one-way hash of the user’s account name on your server.
   final String? applicationUserName;
+  final int? quantity;
 }
