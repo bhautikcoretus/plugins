@@ -21,28 +21,28 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # in_app_purchase_platform_interface:
-  #   git:
-  #     url: https://github.com/bhautikcoretus/plugins.git
-  #     path: packages/in_app_purchase/in_app_purchase_platform_interface/
-  # in_app_purchase_android:
-  #   git:
-  #     url: https://github.com/bhautikcoretus/plugins.git
-  #     path: packages/in_app_purchase/in_app_purchase_android/
-
-  # in_app_purchase_ios:
-  #   git:
-  #     url: https://github.com/bhautikcoretus/plugins.git
-  #     path: packages/in_app_purchase/in_app_purchase_ios/
-
   in_app_purchase_platform_interface:
-    path: ../in_app_purchase_platform_interface/
-
+    git:
+      url: https://github.com/bhautikcoretus/plugins.git
+      path: packages/in_app_purchase/in_app_purchase_platform_interface/
   in_app_purchase_android:
-    path: ../in_app_purchase_android/
+    git:
+      url: https://github.com/bhautikcoretus/plugins.git
+      path: packages/in_app_purchase/in_app_purchase_android/
 
   in_app_purchase_ios:
-    path: ../in_app_purchase_ios/
+    git:
+      url: https://github.com/bhautikcoretus/plugins.git
+      path: packages/in_app_purchase/in_app_purchase_ios/
+
+  # in_app_purchase_platform_interface:
+  #   path: ../in_app_purchase_platform_interface/
+
+  # in_app_purchase_android:
+  #   path: ../in_app_purchase_android/
+
+  # in_app_purchase_ios:
+  #   path: ../in_app_purchase_ios/
 
 dev_dependencies:
   flutter_driver:
